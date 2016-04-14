@@ -15,6 +15,10 @@ interface ElementInterface {
 
   public function addAttribute($name, $value);
 
+  public function setAttribute($name, $value);
+
+  public function hasAttribute($name);
+
   public function setContent(ElementTreeInterface $elements);
 
 }

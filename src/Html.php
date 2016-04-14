@@ -15,14 +15,14 @@ class Html implements ElementInterface {
         return $this->attributes;
     }
 
-    public function addAttribute()
+    public function getAttribute($name)
     {
-        // TODO: Implement addAttribute() method.
+        return $this->attributes[$name];
     }
 
-    public function setAttribute()
+    public function addAttribute($name, $value)
     {
-        // TODO: Implement setAttribute() method.
+        $this->attributes[$name] = $value;
     }
 
     public function setContent(ElementTreeInterface $elements)
